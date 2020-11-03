@@ -1,0 +1,5 @@
+server:
+  port: 9993
+spring:
+  application:
+   name: common-core
