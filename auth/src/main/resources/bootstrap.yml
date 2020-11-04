@@ -14,3 +14,14 @@ spring:
       discovery:
         server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
+  redis:
+    host: 127.0.0.1
+    database: 0
+    password:
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 3
+        max-idle: 8
+        min-idle: 0
