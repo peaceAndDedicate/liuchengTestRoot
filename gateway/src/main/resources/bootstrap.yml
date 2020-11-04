@@ -2,4 +2,4 @@ server:
   port: 9994
 spring:
   application:
-   name: common-core
+   name: gateway
