@@ -2,7 +2,7 @@ nacos.server-addr: 127.0.0.1:8848  #自己
 nacos.namespace: 07883370-2b5e-4992-81ef-0eaad270c43b
 
 server:
-  port: 9997
+  port: 9994
 spring:
   application:
     name: service-system

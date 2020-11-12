@@ -5,10 +5,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>auth</module>
-        <module>common-core</module>
         <module>common-mapper</module>
         <module>gateway</module>
-        <module>service-prss</module>
         <module>service-rstdi</module>
         <module>service-system</module>
     </modules>
@@ -19,5 +17,6 @@
     <description>root</description>
     <properties>
         <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+        <spring-cloud.version>2.1.2.RELEASE</spring-cloud.version>
     </properties>
 </project>

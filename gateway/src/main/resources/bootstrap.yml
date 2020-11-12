@@ -2,7 +2,7 @@ nacos.server-addr: 127.0.0.1:8848  #自己
 nacos.namespace: 07883370-2b5e-4992-81ef-0eaad270c43b
 
 server:
-  port: 9994
+  port: 9992
 spring:
   application:
     name: gateway
@@ -14,3 +14,21 @@ spring:
       discovery:
         server-addr: ${nacos.server-addr}
         namespace: ${nacos.namespace}
+
+zuul:
+  ignored-services: '*'
+  host:
+    maxTotalConnections: 200
+    maxPerRouteConnections: 200
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000
+  ignored-headers: Access-Control-Allow-Origin,H-APP-Id,Token,APPToken
+  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-
+    Credentials,Access-Control-Allow-Headers,Access-Control-Expose-Headers,Access-Control-Max-Age,Cookie,Set-Cookie
+  routes:
+    service-system:
+      path: /sys/**
+      serviceId: service-system
+    service-rstdi:
+      path: /rstdi/**
+      serviceId: service-rstdi

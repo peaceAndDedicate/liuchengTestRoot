@@ -25,3 +25,7 @@ spring:
         max-wait: 3
         max-idle: 8
         min-idle: 0
+oauth:
+  validity:
+    accessToken: 36000
+    refreshToken: 36000

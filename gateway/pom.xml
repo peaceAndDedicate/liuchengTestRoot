@@ -69,9 +69,10 @@
             <version>1.1.4</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <!--要写netflix-->
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <version>2.1.2.RELEASE</version>
         </dependency>
     </dependencies>
 
@@ -88,6 +89,7 @@
                 <executions>
                     <execution>
                         <goals>
+                            <!--不加这句话生成的jar包很小，放到线上会报错，没有mainClass-->
                             <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
                         </goals>
                     </execution>
