@@ -1,5 +1,6 @@
 nacos.server-addr: 127.0.0.1:8848  #自己
-nacos.namespace: 07883370-2b5e-4992-81ef-0eaad270c43b
+#nacos.namespace: 07883370-2b5e-4992-81ef-0eaad270c43b
+nacos.namespace: db5e8cb9-7961-4608-9619-8c2d66ee6055
 
 server:
   port: 9993
